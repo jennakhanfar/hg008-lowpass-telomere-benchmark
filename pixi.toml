@@ -2,9 +2,14 @@
 authors = ["Jenna Khanfar <jenna.khanfar@mbzuai.ac.ae>"]
 channels = ["conda-forge", "bioconda"]
 name = "hg008-lowpass-telomere-benchmark"
-platforms = ["osx-arm64"]
+platforms = ["osx-arm64", "linux-64"]
 version = "0.1.0"
 
 [tasks]
 
 [dependencies]
+samtools = ">=1.25,<2"
+snakemake = ">=9.27.2,<10"
+
+[target.linux-64.dependencies]
+telseq = ">=0.0.2,<0.0.3"
