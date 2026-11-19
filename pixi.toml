@@ -1,0 +1,10 @@
+[workspace]
+authors = ["Jenna Khanfar <jenna.khanfar@mbzuai.ac.ae>"]
+channels = ["conda-forge", "bioconda"]
+name = "hg008-lowpass-telomere-benchmark"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
